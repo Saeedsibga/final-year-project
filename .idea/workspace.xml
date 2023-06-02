@@ -33,6 +33,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -179,7 +180,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685689191876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Revert &quot;final year project&quot;&#10;&#10;This reverts commit d880a3a9865163d9fa03ae0b7354ce1c47dbf3bc.">
+      <created>1685689454555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685689454555</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Revert &quot;final year project&quot;&#10;&#10;This reverts commit d880a3a9865163d9fa03ae0b7354ce1c47dbf3bc.">
+      <created>1685689469294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685689469294</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Revert &quot;final year project&quot;&#10;&#10;This reverts commit d880a3a9865163d9fa03ae0b7354ce1c47dbf3bc.">
+      <created>1685689721662</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685689721662</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -195,11 +217,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="7ca0fb3c-bc9f-4810-aa6d-6b0036e7b77a">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Sibga Saeed/AndroidStudioProjects/FYproject/.gradle" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="7ca0fb3c-bc9f-4810-aa6d-6b0036e7b77a" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
