@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Disease Selection -->
+        <Spinner
+            android:id="@+id/disease_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:entries="@array/disease_array"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Acne Medicines -->
+        <LinearLayout
+            android:id="@+id/acne_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicines for Acne:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Pregnant Women:"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erythromycin"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erythromycin is an antibiotic that can be used to treat acne. It works by killing bacteria on the skin and reducing inflammation. It is generally considered safe to use during pregnancy, but it is essential to consult with a healthcare professional. "
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="usage"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take this medication by mouth as directed by your doctor, usually before a meal. This medication is best absorbed when taken on an empty stomach. If nausea occurs, you may take it with food or milk. This medication has a bitter taste if crushed. Swallow the medication whole. Do not chew or crush."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dosage:
+The dosage and length of treatment are based on your medical condition and response to treatment. In children, the dosage is also based on age and weight.
+"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Way to Use:
+For the best effect, take this antibiotic at evenly spaced times. To help you remember, take this medication at the same time(s) every day. If you are using this medication to treat an infection, continue to take this medication until the full prescribed amount is finished, even if symptoms disappear after a few days. Stopping the medication too early may result in a return of the infection. Tell your doctor if your condition lasts or gets worse.
+"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amoxicillin"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amoxicillin is another antibiotic that is commonly used to treat acne. It works by killing the bacteria that cause acne. Amoxicillin is generally considered safe to use during pregnancy.
+
+Usage:
+You may take this medicine with or without food.
+For patients using the oral liquid:
+•	Shake the bottle well before each use. Measure the dose with a marked measuring spoon, oral syringe, or medicine cup. The average household teaspoon may not hold the right amount of liquid.
+•	You may mix the oral liquid with a baby formula, milk, fruit juice, water, ginger ale, or another cold drink. Be sure the child drinks all of the mixture immediately.
+Keep using this medicine for the full treatment time, even if you feel better after the first few doses. Your infection may not clear up if you stop using the medicine too soon.
+"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="14dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_1"
+                />
+
+        </LinearLayout>
+
+        <!-- Eczema Medicines -->
+        <LinearLayout
+            android:id="@+id/eczema_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicines for Eczema:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Medicine 1 for Eczema" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Medicine 2 for Eczema" />
+
+        </LinearLayout>
+
+        <!-- Ringworm Medicines -->
+        <LinearLayout
+            android:id="@+id/ringworm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicines for Ringworm:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Medicine 1 for Ringworm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Medicine 2 for Ringworm" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

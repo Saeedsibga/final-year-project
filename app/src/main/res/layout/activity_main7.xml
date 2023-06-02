@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#9874a7">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:padding="16dp"
+            android:background="@drawable/gradient">
+
+            <!-- Title -->
+
+            <!-- Logo Image -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:text="Health Conditions"
+                android:fontFamily="@font/bungee_shade"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <!-- Text -->
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/titleTextView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="-6dp"
+                android:src="@drawable/rib" />
+
+            <TextView
+                android:id="@+id/textTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logoImageView"
+                android:layout_marginTop="16dp"
+                android:text="Enter your health condition:"
+                android:textColor="@color/white"/>
+
+            <!-- Checkboxes -->
+            <CheckBox
+                android:id="@+id/pregnantCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTextView"
+                android:text="Pregnant"
+                android:drawableLeft="@drawable/ic_pregnant"/>
+
+            <CheckBox
+                android:id="@+id/diabeticCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pregnantCheckBox"
+                android:text="Diabetic patient"
+                android:drawableLeft="@drawable/ic_diabetic"/>
+
+            <CheckBox
+                android:id="@+id/cardiovascularCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diabeticCheckBox"
+                android:text="Cardiovascular patient"
+                android:drawableLeft="@drawable/heart"/>
+
+            <CheckBox
+                android:id="@+id/kidneyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardiovascularCheckBox"
+                android:text="Kidney patient"
+                android:drawableLeft="@drawable/kidney"/>
+
+            <CheckBox
+                android:id="@+id/othersCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kidneyCheckBox"
+                android:text="Others"
+                android:drawableLeft="@drawable/baseline_question_mark_24"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/othersCheckBox"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="#9874a7"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/submitButton"
+                android:layout_marginEnd="80dp"
+                android:layout_toStartOf="@id/submitButton"
+                android:backgroundTint="#9874a7"
+                android:gravity="center"
+                android:text="Back"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

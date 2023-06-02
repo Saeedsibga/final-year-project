@@ -1,0 +1,1439 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/for_pregnant_women"
+            android:background="@drawable/back"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/acne_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Acne"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:src="@drawable/gel"
+                        android:contentDescription="TODO" />
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine_layout1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicine_text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/adapalene_gel"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/read_more_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/acne_medicine_description1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Adapalene is a type of retinoid that can be used to treat acne. It works by reducing inflammation and unclogging pores.
+Usage:
+If you are using the over-the-counter product to self-treat, read and follow all directions on the product package before using this medication. If you have any questions, consult your pharmacist.
+•	If your doctor has prescribed this medication, use it as directed.
+•	Use once daily at bedtime. Before using, gently clean the affected skin with a mild or soapless cleanser and pat dry.
+•	If you are using the gel, cream, or lotion, wash your hands before and after applying this medication. Use your fingertips to apply a small amount of medication in a thin layer. If you are using the medicated swab, unwrap the swab and apply a thin layer to the affected area(s).
+Warning:
+Use this medication on the skin only. Avoid getting this medication in your eyes or on your lips. Do not apply to the inner lip area or inside the nose/mouth. If this medication gets into your eyes, flush with large amounts of water. Call your doctor if eye irritation develops. Do not apply to cut, scraped, or sunburned areas, or to skin affected by eczema (a skin condition).
+"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            tools:ignore="TextSizeCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel2" />
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine_layout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicine_text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Clindamycin Phosphate Gel"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/read_more_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/acne_medicine_description2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Clindamycin is an antibiotic that is often used to treat acne. It works by killing bacteria on the skin and reducing inflammation.
+
+Usage:
+•	Use this medication only on the skin. Clean and dry the affected area first. If you are using the lotion, shake the bottle well before using.
+•	Apply a thin layer of medication usually twice a day.
+•	If you are using the medicated pad or swab, apply to the affected area gently with it, then discard.
+•	Depending on the size of the area to be treated, more than one pad or swab may be necessary.
+
+Warning:
+If you are using the foam, apply it once daily to the affected areas. Use enough to cover the entire affected area. Do not spray the foam directly onto your hands or face, because the foam will begin to melt on contact with warm skin. Instead spray the amount needed directly into the cap or onto a cool surface such as a counter top.
+"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            tools:ignore="TextSizeCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Add three more CardViews with image buttons and descriptions for other acne medicines if needed -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel3" />
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine_layout4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicine_text4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Azelaic acid cream"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/read_more_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/acne_medicine_description4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Azelaic acid is a topical medication that can be used to treat acne. It works by reducing inflammation and killing bacteria on the skin.
+Usage:
+•	Before using this medication, clean the affected area and pat dry. Apply this medication to the skin usually twice daily, in the morning and evening, or as directed by your doctor.
+•	Apply a thin layer and massage gently into the affected areas.
+•	Wash your hands after use.
+•	Use this medication regularly in order to get the most benefit from it.
+Warning:
+Avoid contact in or near the eyes or inside the nose and mouth. If this medication gets into any of these areas, wash right away with plenty of water and call your doctor if irritation lasts. Do not place a bandage or cover over the cream unless
+your doctor tells you to do so.
+Dosage and Improvement :
+Do not use large amounts of this medication or apply it more often than directed. Your condition will not improve any faster, and the risk of side effects may increase. Use this medication for the full course of treatment as directed by your doctor. It usually takes about 1 month to see an improvement, but the full effects of treatment may take longer.
+
+"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            tools:ignore="TextSizeCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel4" />
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine_layout3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicine_text3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Benzoyl peroxide cream"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/read_more_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/acne_medicine_description3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Benzoyl peroxide is a topical medication that is commonly used to treat mild to moderate acne. It works by reducing inflammation and killing bacteria on the skin.
+
+Allergic Reaction:
+Before using this product to treat acne for the first time, check if you are allergic to it. To check, put a small amount on one or two small areas of acne for three days. If you have an allergic reaction, stop using this product and get medical help right away. If you don't have an allergic reaction, you can use the product.
+Usage:
+To treat acne, apply benzoyl peroxide to the areas of your skin affected by acne, Apply thin layer softly.
+Warning:
+•	Avoid getting this medication into your eyes, inside your nose or mouth, on the lips, or on any areas of broken skin since it may cause irritation.
+•	If this occurs, flush the area with plenty of water.
+•	Wash your hands after applying this product.
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel5"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Topical erythromycin cream"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Erythromycin is an antibiotic that can be used to treat acne. It works by killing bacteria on the skin and reducing inflammation.
+Usage:
+This medication is for use on the skin only. Clean and dry the affected area as directed.
+•	Then apply a thin layer of the medication on the skin using the applicator or cotton balls/pads as directed by your doctor, usually twice a day. Wash your hands after use.
+•	Do not use large amounts or apply this more often or for a longer period than directed. Your condition will not clear faster, but the risk of side effects may be increased.
+•	Use this medication regularly in order to get the most benefit from it. Remember to use it at the same times each day.
+Warning:
+Avoid getting this medication in your eyes or inside the nose or mouth. If this occurs, rinse thoroughly with water.
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel6"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Topical erythromycin cream"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description5"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Salicylic acid is a type of beta-hydroxy acid that can be used to exfoliate the skin and reduce acne. It is generally considered safe to use during pregnancy.
+Allergic Reaction:
+Before using this product for the first time, check if you are allergic to it. To check, put a small amount on one or two small areas of acne for three days. If you have an allergic reaction, stop using this product and get medical help right away. If you don't have an allergic reaction, you can use the product.
+Warning:
+•	This medication is for use on the skin only.
+•	To avoid irritation, do not let this medication come into contact with your eyes, nose, mouth, groin, or any broken skin (such as cuts, scrapes, rashes).
+•	If you do get the medication in those areas, flush the area with cool water for 15 minutes.
+Directions to use:
+If you are using a cream, lotion, solution, or gel, apply a thin film of the medication to the areas of your skin affected by acne, usually 1 to 2 times a day or as directed by your doctor. Before applying each dose, gently wash the affected area with a mild cleanser, then pat dry. Apply a small amount of medicine to the affected area and rub in gently. If using the pads, wash the affected skin with a mild cleanser, then pat dry. Wipe the pad gently onto the skin to apply the medication, usually 1 to 3 times a day or as directed by your doctor. Wash hands after use.
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel7"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Epiduo Gel"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description6"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Epiduo gel contains adapalene and benzoyl peroxide, which work together to reduce inflammation and kill bacteria on the skin. It is generally considered safe to use during pregnancy.
+Usage:
+•	Wash your hands before and after applying Epiduo gel.
+•	Clean and pat dry the skin to be treated.
+•	Use a pea-sized amount of the gel for each treatment area (chin, forehead, and each cheek).
+•	Apply Epiduo gel in a thin layer and rub in gently and allow it to dry completely before dressing.
+•	Call your doctor if your symptoms do not improve, or if they get worse while using this medicine.
+Storage:
+Store Epiduo gel at room temperature away from moisture, heat, and light.
+Dosing information:
+Usual Adult Dose for Acne:
+Usual dose: Apply a thin layer to the affected area once a day
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/lotion"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Calamine lotion"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description7"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Calamine lotion is a topical medication that can be used to treat mild to moderate acne. It works by reducing inflammation and drying out pimples.
+How to Use:
+Calamine is for external use only. Do not swallow it and do not use it on the eyes or mucous membranes such as the inside of the mouth, nose, genital (sex organs), or anal areas.
+To use calamine lotion:
+•	Shake the lotion well before using.
+•	Moisten a pledget of cotton with the lotion.
+•	Use the moistened pledget to apply the lotion to the affected skin area(s).
+•	Allow the medicine to dry on the skin.
+Dosing
+•	The dose of this medicine will be different for different patients. For minor skin irritations:
+•	For topical dosage forms (lotion, ointment):
+•	Adults and children—Apply to the affected area(s) of skin as often as needed.
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel8"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Erythromycin"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description8"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Erythromycin is an antibiotic that can be used to treat acne. It works by killing bacteria on the skin and reducing inflammation. It is generally considered safe to use during pregnancy, but it is essential to consult with a healthcare professional.
+Usage:
+•	Take this medication by mouth as directed by your doctor, usually before a meal.
+•	This medication is best absorbed when taken on an empty stomach. If nausea occurs, you may take it with food or milk.
+•	This medication has a bitter taste if crushed. Swallow the medication whole. Do not chew or crush.
+Dosage:
+The dosage and length of treatment are based on your medical condition and response to treatment. In children, the dosage is also based on age and weight.
+Best Way to Use:
+For the best effect, take this antibiotic at evenly spaced times. To help you remember, take this medication at the same time(s) every day. If you are using this medication to treat an infection, continue to take this medication until the full prescribed amount is finished, even if symptoms disappear after a few days. Stopping the medication too early may result in a return of the infection. Tell your doctor if your condition lasts or gets worse.
+
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/gel9"
+                        android:backgroundTint="@color/white"/>
+
+                    <LinearLayout
+                        android:id="@+id/acne_medicine1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/acne_medicinetext1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Amoxicillin"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Read More"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/description1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:padding="8dp"
+                            android:text="Amoxicillin is another antibiotic that is commonly used to treat acne. It works by killing the bacteria that cause acne. Amoxicillin is generally considered safe to use during pregnancy.
+Usage:
+You may take this medicine with or without food.
+For patients using the oral liquid:
+•	Shake the bottle well before each use. Measure the dose with a marked measuring spoon, oral syringe, or medicine cup. The average household teaspoon may not hold the right amount of liquid.
+•	You may mix the oral liquid with a baby formula, milk, fruit juice, water, ginger ale, or another cold drink. Be sure the child drinks all of the mixture immediately.
+Keep using this medicine for the full treatment time, even if you feel better after the first few doses. Your infection may not clear up if you stop using the medicine too soon.
+"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eczema_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eczema"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:gravity="center"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecze1"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_medicine9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_medicinetext9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Emollients"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczemabutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/description9"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="These are moisturizing creams or ointments that help to hydrate the skin and reduce dryness, flakiness, and itching. They do not contain any active ingredients and are generally considered safe during pregnancy. It may include petroleum jelly, Aquaphor, and Cetaphil Moisturizing Cream.
+Usage
+•	If eczema symptoms persist despite the use of emollients and other measures, it is important to consult a healthcare provider.
+•	They may recommend additional treatments, such as topical or oral medications, to manage symptoms and ensure the health and wellbeing of both the mother and the developing fetus.
+
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/eczem2"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Hydrocortisone cream 1% "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="This is a low-potency topical corticosteroid that can be used to reduce redness, inflammation, and itching. It is available over-the-counter and is generally considered safe during pregnancy. However, it should be used only for a short period of time and in small amounts.
+Usage
+•	It should not be used on open wounds, broken skin, or by individuals with allergies to its ingredients.
+•	It is also important to talk to a healthcare provider before using calamine lotion if you are pregnant, breastfeeding, or taking other medications.
+
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz3"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Calamine lotion "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="This is a topical lotion that contains zinc oxide and is used to soothe and calm irritated skin. It is generally considered safe during pregnancy.
+Usage
+•	Calamine lotion may interact with other medications you are taking, so it's important to talk to your healthcare provider if you are using other medications or if you have any medical conditions.
+•	It's always best to follow the instructions for use and to consult a healthcare provider if you have any questions or concerns about using calamine lotion.
+
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz4"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Antihistamines "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="Oral antihistamines may be considered for use during pregnancy to reduce itching and inflammation caused by eczema.
+ Usage:
+•	Take the oral antihistamines as prescribed by your healthcare provider.
+•	Follow the recommended dosage and frequency of use.
+•	Take the antihistamines with a full glass of water.
+•	It is advisable to take antihistamines with food to minimize the risk of stomach upset.
+•	If you have any questions or concerns about the usage, consult your healthcare provider.
+Warnings
+•	Consult with your healthcare provider before taking any antihistamines during pregnancy.
+•	Some types of antihistamines may not be safe for use during pregnancy, so it is important to discuss the potential risks and benefits with your healthcare provider.
+•	Avoid taking antihistamines without medical supervision, especially during the first trimester of pregnancy when the baby's organs are developing.
+
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz5"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Cyclosporine "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription5"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="Cyclosporine is an immunosuppressant medication that can be used to reduce inflammation in severe cases of eczema. It may be considered for use during pregnancy if the benefits outweigh the potential risks.
+Usage:
+•	Cyclosporine should only be taken under the supervision of a healthcare provider.
+•	Follow the prescribed dosage and frequency of use as directed by your healthcare provider.
+•	Take cyclosporine with a full glass of water, preferably at the same time each day.
+•	It is important to take cyclosporine consistently to maintain a steady level of the medication in your body.
+•	Do not crush, chew, or break the capsules or tablets. Swallow them whole.
+Warnings :
+•	Cyclosporine should only be used during pregnancy if the benefits outweigh the potential risks. It is important to discuss the potential risks and benefits with your healthcare provider.
+•	Cyclosporine has been associated with an increased risk of certain adverse effects, including high blood pressure, kidney problems, and increased susceptibility to infections.
+•	Inform your healthcare provider if you have any pre-existing medical conditions, such as kidney disease or high blood pressure, as these may affect the suitability and dosage of cyclosporine during pregnancy.
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz6"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Azathioprine "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription6"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="Azathioprine is an immunosuppressant medication that can be used to reduce inflammation in severe cases of eczema. It may be considered for use during pregnancy if the benefits outweigh the potential risks.
+Usage:
+•	Cyclosporine should only be taken under the supervision of a healthcare provider.
+•	Follow the prescribed dosage and frequency of use as directed by your healthcare provider.
+•	Take cyclosporine with a full glass of water, preferably at the same time each day..
+•	Avoid grapefruit and grapefruit juice while taking cyclosporine, as they can interact with the medication.
+•	Inform your healthcare provider about any other medications you are taking to avoid potential drug interactions.
+Warnings
+Cyclosporine should only be used during pregnancy if the benefits outweigh the potential risks
+•	Cyclosporine has been associated with an increased risk of certain adverse effects, including high blood pressure, kidney problems, and increased susceptibility to infections.
+•	Inform your healthcare provider if you have any pre-existing medical conditions, such as kidney disease or high blood pressure, as these may affect the suitability and dosage of cyclosporine during pregnancy.
+•	Avoid becoming pregnant while taking cyclosporine and use effective contraception. Cyclosporine may cause harm to the developing fetus.
+•	Breastfeeding is generally not recommended while taking cyclosporine, as the medication can pass into breast milk and may harm the nursing infant.
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz7"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Mycophenolate mofetil "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription7"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="Mycophenolate mofetil is an immunosuppressant medication that is used to prevent organ rejection in transplant patients. It is not recommended for use during pregnancy due to potential risks to the developing fetus.
+Usage:
+•	Follow the prescribed dosage and frequency of use as directed by your healthcare provider. Do not adjust the dosage without consulting your healthcare provider.
+•	Take mycophenolate mofetil with a full glass of water, usually on an empty stomach or as directed by your healthcare provider.
+•	It is important to take mycophenolate mofetil consistently at the same time each day to maintain a steady level of the medication in your body.
+Warnings:
+Please note that the usage and warnings provided here are general guidelines. It is important to consult with your healthcare provider for personalized advice and guidance specific to your situation. They can provide you with the most accurate and up-to-date information considering your medical history and any other medications you may be taking.
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz8"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Evening primrose oil"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription8"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="This is a dietary supplement that contains gamma-linolenic acid (GLA), an omega-6 fatty acid that may help to reduce inflammation in the body. It can be taken orally or applied topically in the form of a cream or oil.
+Usage:
+•	Evening primrose oil can be taken orally as a dietary supplement. Follow the recommended dosage instructions provided on the product label or as advised by your healthcare provider.
+•	It is typically recommended to take evening primrose oil with food to improve absorption and reduce the risk of stomach upset.
+•	If using evening primrose oil topically, apply a small amount to the affected area and gently massage it into the skin. Follow the instructions provided on the product packaging or as directed by your healthcare provider.
+Warnings:
+•	Consult with your healthcare provider before taking evening primrose oil, especially if you have any pre-existing medical conditions or are taking other medications or supplements
+•	Evening primrose oil may interact with certain medications, such as blood-thinning medications or anticonvulsants.
+•	Evening primrose oil is generally considered safe for most people when used appropriately.
+•	Pregnant women should exercise caution when using evening primrose oil, as it may stimulate uterine contractions. It is important to consult with a healthcare provider before using evening primrose oil during pregnancy.
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eczimage8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/ecz9"
+                    android:backgroundTint="@color/white"/>
+
+                <LinearLayout
+                    android:id="@+id/acne_eczmedicine8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/acne_eczmedicinetext8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Zinc oxide cream "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/Eczmabutton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Read More"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/eczemadescription9"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="This is a topical cream that contains zinc oxide and can help to soothe and protect irritated skin. It is commonly used for diaper rash but can also be helpful for eczema. It is generally considered safe during pregnancy when used topically. However, it should not be used on open wounds or areas of the skin with active infections.
+Usage:
+•	Clean the affected area of the skin and pat it dry before applying the zinc oxide cream.
+•	Take a small amount of cream and apply it evenly to the affected area.
+•	Gently massage the cream into the skin until it is absorbed.
+•	Use zinc oxide cream as directed by your healthcare provider or follow the instructions on the product label.
+•	Reapply the cream as needed, usually after each diaper change or as recommended by your healthcare provider.
+Warnings:
+•	Zinc oxide cream is intended for topical use only and should not be ingested or applied to open wounds.
+•	If you experience any signs of an allergic reaction, such as rash, itching, swelling, or difficulty breathing, discontinue use and seek medical attention immediately.
+•	Avoid contact with eyes contact, rinse thoroughly with water.
+"
+
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/eczema_medicine_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eczema Medicine"
+            android:padding="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ringworm_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringworm"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/ringworm_medicine_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringworm Medicine"
+            android:padding="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+

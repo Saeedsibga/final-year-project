@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9874a7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9874a7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="#9874a7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/bungee_shade"
+                    android:text="DASHBOARD"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#9874a7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/animation_gif"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:visibility="gone"
+                        android:src="@drawable/animated"
+                        app:loopCount="1" />
+
+                    <ImageButton
+                        android:id="@+id/button_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/baseline_circle_24"
+                        android:backgroundTint="#bd8dbb"
+                        android:contentDescription="Take picture from camera"
+                        android:src="@drawable/camera" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/button_2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/baseline_circle_24"
+                            android:backgroundTint="#bd8dbb"
+                            android:contentDescription="upload"
+                            android:src="@drawable/ump"
+                            android:onClick="pickImageFromGallery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="41dp"
+                            android:fontFamily="@font/archivo_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/button_3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/baseline_circle_24"
+                            android:backgroundTint="#bd8dbb"
+                            android:contentDescription="swipe next"
+                            android:src="@drawable/imageswipe"
+                            android:onClick="openNextActivity" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Next"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="45dp"
+                            android:fontFamily="@font/archivo_black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/overlay_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

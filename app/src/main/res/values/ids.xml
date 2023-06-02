@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewPager" type="id" />
+    <item name="conditionImageView" type="id" />
+    <item name="video_view" type="id" />
+    <item name="medicineButton" type="id" />
+    <item name="homeRemediesButton" type="id" />
+    <item name="backButton" type="id" />
+    <item name="nextButton" type="id" />
+    <item name="oralMedicinesButton" type="id" />
+    <item name="gif_image_view" type="id" />
+    />
+</resources>

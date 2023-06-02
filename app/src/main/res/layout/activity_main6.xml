@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <!-- Privacy Policy and Terms of Use buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/privacy_policy_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Privacy Policy"
+            android:textColor="@color/black"
+            android:backgroundTint="#9874a7"
+            android:layout_marginEnd="3dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Add any desired spacing or divider between the buttons -->
+
+        <Button
+            android:id="@+id/terms_of_use_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#9874a7"
+            android:text="Terms of Use"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient">
+
+        <ScrollView
+            android:id="@+id/content_scroll_view_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name">
+
+            <LinearLayout
+                android:id="@+id/content_layout_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Introduction"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="Hello! We at Skin Disease Detection Application privacy Section. We are fully committed to protecting and safeguarding the personal data you share with us when you use our services. In this Privacy Policy, we explain what kind of data we use, and how we use it.\n\nWe might amend this Privacy Policy from time to time. If any Updates we will let you know.\n\nWe have designed our services with your privacy in mind. As this is always a two way dynamic process, we would be happy to hear feedbacks from you.\n\nHowever, if you do not agree with our processing of personal data as described in this Privacy Policy, you cannot continue the use of our Services."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="What data do we collect?"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="This Application requires knowledge of your email, name, Gender, Age, and Address and will also keep the disease detected. However as such, we will also  be able to reach out to you or to send you important alerts or reminders.\n\nThe Purpose of collecting this Data is to keep a record of what our application is serving and make changes in that way it will also help us to check the results and accuracy rate which will be helpful as this is a Project. You are hence advised to keep checking on our website, apps or services to be always mindful of any changes to our Terms of Use and Privacy Policy. You are encouraged to reach out to us for any concerns or questions instead."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Working Criteria:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="After initial installation, you will have to fill in your biodata profile, which is stored locally in your device. The data we collect at this point are:
+- Gender (either male or female)
+- Your age (discrete number)
+-Your email
+-Your username(again, we kept this extremely non specific)
+At each attempt, you will take a photo of the target skin condition. Please do not take photos which contain sensitive and personal information .This is something which we cannot control. Image processing is then done locally on your device and the result is uploaded to our server for Al analysis, along with a copy of your locally stored biodata
+"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Why we collect your data, and on what grounds:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="We use collected data for research - to improve the accuracy, reliability and stability of our Al technology so that one day our capabilities can be used to tackle global medical challenges. By using our services, you explicitly consent to the images being processed for the purposes of the provision of the services and to be used anonymously for the purposes of research, testing of our services and to advance the interests of our Application..Given the experimental and unpredictable nature of this Application, content provided and our policies will change from time to time. We may revise and update this Privacy Policy at any time. \nIf at anytime you have concerns, please stop using our services immediately and contact us."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <!-- Content for Terms of Use (Initially hidden) -->
+    <FrameLayout
+        android:id="@+id/content_frame_terms_of_use"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="@drawable/gradient">
+
+        <ScrollView
+            android:id="@+id/content_scroll_view_terms_of_use"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name">
+
+            <LinearLayout
+                android:id="@+id/content_layout_terms_of_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Use"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="Welcome to our skin disease detection and recommendation application. By using our application, you agree to be bound by the following terms and conditions."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Acceptance of Terms:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="By accessing or using our application, you agree to be bound by these Terms of Use, as they may be updated or modified from time to time. If you do not agree to these terms, please do not use the application."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="Medical Disclaimer:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="The skin disease detection and recommendation application is intended to provide general information only and is not a substitute for professional medical advice, diagnosis, or treatment. The information provided by this application should not be used for diagnosing or treating a health problem or disease. Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Accuracy of Information:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability of the information, products, services, or related graphics contained in the application. Any reliance you place on such information is therefore strictly at your own risk."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="Use of the Application:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="You may use the skin disease detection and recommendation application for personal and non-commercial purposes only. You may not use the application for any illegal or unauthorized purpose, including but not limited to violating any intellectual property rights, or in a manner that may cause harm to others."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="No Medical Liability:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:text="The skin disease detection and medicine recommendation application is not liable for any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use the application. By using the application, you agree to indemnify and hold harmless the application, its owners, employees, and affiliates from any claims, damages,or other liabilities arising from your use of the application."
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Machine Learning Limitations:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="The skin disease detection and medicine recommendation application uses machine learning algorithms to detect skin diseases and recommend medicines. However, the accuracy of the application may be affected by various factors, including but not limited to the quality of the input image, the age and skin type of the user, and the specific type of skin disease. Therefore, the application cannot guarantee the accuracy of its recommendations and should not be used as the sole basis for medical decision-making."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Intellectual Property:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="The skin disease detection and medicine recommendation application and its content are protected by copyright, trademark, and other intellectual property laws. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from the application."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Changes to Terms of Use:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="We reserve the right to update or modify these Terms of Use at any time without prior notice. Your continued use of the skin disease detection and medicine recommendation application after any such changes will constitute your acceptance of the modified Terms of Use."
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Contact Us:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/black"
+                    android:text="If you have any questions about these Terms of Use, please contact us "
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9874a7"
+            android:onClick="onAcceptButtonClick"
+            android:text="Accept"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9874a7"
+            android:onClick="onRejectButtonClick"
+            android:text="Reject"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
